@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Using CRC :: CRC Documentation</title>
-    <link rel="canonical" href="https://crc.dev/docs/getting_started/getting_started/using/">
+    <link rel="canonical" href="https://crc.dev/docs/using/">
+    <meta name="description" content="Using CRC">
     <meta name="generator" content="Antora 3.1.4">
-    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../_/css/site.css">
   </head>
   <body class="article">
 <header class="header">
@@ -36,7 +37,7 @@
     <script data-goatcounter="https://crc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </header>
 <div class="body">
-<div class="nav-container" data-component="getting_started" data-version="">
+<div class="nav-container" data-component="ROOT" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -96,7 +97,7 @@
     <li><a href="./">Using CRC</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///antora/./modules/getting_started/pages/using.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///antora/./modules/ROOT/pages/using.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -105,7 +106,7 @@
 <article class="doc">
 <h1 class="page">Using CRC</h1>
 <div class="sect1">
-<h2 id="_about_presets"><a class="anchor" href="#_about_presets"></a>About presets</h2>
+<h2 id="about-presets"><a class="anchor" href="#about-presets"></a>About presets</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
 <p>CRC presets represent a managed container runtime, and the lower bounds of system resources required by the instance to run it.
@@ -137,17 +138,17 @@ Only one preset can be active at a time.</p>
 <div class="title">Additional resources</div>
 <ul>
 <li>
-<p>For more information about the minimum system requirements for each preset, see <a href="https://crc.dev/crc/#minimum-system-requirements_gsg">Minimum system requirements</a>.</p>
+<p><a href="../installing/#minimum-system-requirements" class="xref page">Minimum system requirements</a>.</p>
 </li>
 <li>
-<p>For more information on changing the selected preset, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+<p><a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_setting_up_crc"><a class="anchor" href="#_setting_up_crc"></a>Setting up CRC</h2>
+<h2 id="setting-up"><a class="anchor" href="#setting-up"></a>Setting up CRC</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
 <p>The <code class="command">crc setup</code> command performs operations to set up the environment of your host machine for the CRC instance.</p>
@@ -210,14 +211,14 @@ Always run the <code class="command">crc</code> executable with your user accoun
 <div class="title">Additional resources</div>
 <ul>
 <li>
-<p>For more information about the available container runtime presets, see <a href="https://crc.dev/crc/#about-presets_gsg">About presets</a>.</p>
+<p><a href="#about-presets">About presets</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_starting_the_instance"><a class="anchor" href="#_starting_the_instance"></a>Starting the instance</h2>
+<h2 id="starting-the-instance"><a class="anchor" href="#starting-the-instance"></a>Starting the instance</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <code class="command">crc start</code> command starts the CRC instance and configured container runtime.</p>
@@ -229,8 +230,7 @@ Always run the <code class="command">crc</code> executable with your user accoun
 <p>To avoid networking-related issues, ensure that you are not connected to a VPN and that your network connection is reliable.</p>
 </li>
 <li>
-<p>You set up the host machine using the <code class="command">crc setup</code> command.
-For more information, see <a href="https://crc.dev/crc/#setting-up_gsg">Setting up CRC</a>.</p>
+<p>You have <a href="#setting-up">set up CRC</a>.</p>
 </li>
 <li>
 <p>On Microsoft Windows, ensure that your user account can elevate to Administrator privileges.</p>
@@ -289,23 +289,23 @@ Copy or download the pull secret from the Pull Secret section of the <a href="ht
 <div class="title">Additional resources</div>
 <ul>
 <li>
-<p>To change the default resources allocated to the instance, see <a href="https://crc.dev/crc/#configuring-the-instance_gsg">Configuring the instance</a>.</p>
+<p><a href="../configuring/#configuring-the-instance" class="xref page">Configuring the resources allocated to the instance</a>.</p>
 </li>
 <li>
-<p>If you see errors during <code class="command">crc start</code>, see the <a href="https://crc.dev/crc/#troubleshooting_gsg">Troubleshooting CRC</a> section for potential solutions.</p>
+<p>If you see errors during <code class="command">crc start</code>, see the <a href="../troubleshooting/" class="xref page">Troubleshooting CRC</a> section for potential solutions.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_accessing_the_openshift_cluster"><a class="anchor" href="#_accessing_the_openshift_cluster"></a>Accessing the OpenShift cluster</h2>
+<h2 id="accessing-the-openshift-cluster"><a class="anchor" href="#accessing-the-openshift-cluster"></a>Accessing the OpenShift cluster</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Access the OpenShift Container Platform cluster running in the CRC instance by using the OpenShift Container Platform web console or OpenShift CLI (<code class="command">oc</code>).</p>
 </div>
 <div class="sect2">
-<h3 id="_accessing_the_openshift_web_console"><a class="anchor" href="#_accessing_the_openshift_web_console"></a>Accessing the OpenShift web console</h3>
+<h3 id="accessing-the-openshift-web-console"><a class="anchor" href="#accessing-the-openshift-web-console"></a>Accessing the OpenShift web console</h3>
 <div class="paragraph">
 <p>Access the OpenShift Container Platform web console by using your web browser.</p>
 </div>
@@ -319,11 +319,11 @@ Use the <code>kubeadmin</code> user only for administrative tasks such as creati
 <ul>
 <li>
 <p>CRC is configured to use the OpenShift preset.
-For more information, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+See: <a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 <li>
 <p>A running CRC instance.
-For more information, see <a href="https://crc.dev/crc/#starting-the-instance_gsg">Starting the instance</a>.</p>
+See: <a href="#starting-the-instance">Starting the instance</a>.</p>
 </li>
 </ul>
 </div>
@@ -350,7 +350,7 @@ You can also view the password for the <code>developer</code> and <code>kubeadmi
 </ol>
 </div>
 <div class="paragraph">
-<p>See <a href="https://crc.dev/crc/#troubleshooting_gsg">Troubleshooting CRC</a> if you cannot access the OpenShift Container Platform cluster managed by CRC.</p>
+<p>See <a href="../troubleshooting/" class="xref page">Troubleshooting CRC</a> if you cannot access the OpenShift Container Platform cluster managed by CRC.</p>
 </div>
 <div class="ulist">
 <div class="title">Additional resources</div>
@@ -362,7 +362,7 @@ You can also view the password for the <code>developer</code> and <code>kubeadmi
 </div>
 </div>
 <div class="sect2">
-<h3 id="_accessing_the_openshift_cluster_with_the_openshift_cli"><a class="anchor" href="#_accessing_the_openshift_cluster_with_the_openshift_cli"></a>Accessing the OpenShift cluster with the OpenShift CLI</h3>
+<h3 id="accessing-the-openshift-cluster-with-the-openshift-cli"><a class="anchor" href="#accessing-the-openshift-cluster-with-the-openshift-cli"></a>Accessing the OpenShift cluster with the OpenShift CLI</h3>
 <div class="paragraph">
 <p>Access the OpenShift Container Platform cluster managed by CRC by using the OpenShift CLI (<code class="command">oc</code>).</p>
 </div>
@@ -371,11 +371,11 @@ You can also view the password for the <code>developer</code> and <code>kubeadmi
 <ul>
 <li>
 <p>CRC is configured to use the OpenShift preset.
-For more information, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+See: <a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 <li>
 <p>A running CRC instance.
-For more information, see <a href="https://crc.dev/crc/#starting-the-instance_gsg">Starting the instance</a>.</p>
+See: <a href="#starting-the-instance">Starting the instance</a>.</p>
 </li>
 </ul>
 </div>
@@ -445,7 +445,7 @@ $ oc get co</pre>
 </ol>
 </div>
 <div class="paragraph">
-<p>See <a href="https://crc.dev/crc/#troubleshooting_gsg">Troubleshooting CRC</a> if you cannot access the OpenShift Container Platform cluster managed by CRC.</p>
+<p>See <a href="../troubleshooting/" class="xref page">Troubleshooting CRC</a> if you cannot access the OpenShift Container Platform cluster managed by CRC.</p>
 </div>
 <div class="ulist">
 <div class="title">Additional resources</div>
@@ -457,7 +457,7 @@ $ oc get co</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_accessing_the_internal_openshift_registry"><a class="anchor" href="#_accessing_the_internal_openshift_registry"></a>Accessing the internal OpenShift registry</h3>
+<h3 id="accessing-the-internal-openshift-registry"><a class="anchor" href="#accessing-the-internal-openshift-registry"></a>Accessing the internal OpenShift registry</h3>
 <div class="paragraph">
 <p>The OpenShift Container Platform cluster running in the CRC instance includes an internal container image registry by default.
 This internal container image registry can be used as a publication target for locally developed container images.
@@ -468,15 +468,15 @@ To access the internal OpenShift Container Platform registry, follow these steps
 <ul>
 <li>
 <p>CRC is configured to use the OpenShift preset.
-For more information, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+See: <a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 <li>
 <p>A running CRC instance.
-For more information, see <a href="https://crc.dev/crc/#starting-the-instance_gsg">Starting the instance</a>.</p>
+See: <a href="#starting-the-instance">Starting the instance</a>.</p>
 </li>
 <li>
 <p>A working OpenShift CLI (<code class="command">oc</code>) command.
-For more information, see <a href="https://crc.dev/crc/#accessing-the-openshift-cluster-with-oc_gsg">Accessing the OpenShift cluster with the OpenShift CLI</a>.</p>
+See: <a href="#accessing-the-openshift-cluster-with-the-openshift-cli">Accessing the OpenShift cluster with the OpenShift CLI</a>.</p>
 </li>
 </ul>
 </div>
@@ -562,7 +562,7 @@ For more information, see <a href="https://crc.dev/crc/#accessing-the-openshift-
 </div>
 </div>
 <div class="sect1">
-<h2 id="_deploying_a_sample_application_with_odo"><a class="anchor" href="#_deploying_a_sample_application_with_odo"></a>Deploying a sample application with <code>odo</code></h2>
+<h2 id="deploying-a-sample-application-with-odo"><a class="anchor" href="#deploying-a-sample-application-with-odo"></a>Deploying a sample application with <code>odo</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can use <code class="command">odo</code> to create OpenShift projects and applications from the command line.
@@ -577,11 +577,11 @@ For more information, see <a href="https://odo.dev/docs/overview/installation">I
 </li>
 <li>
 <p>CRC is configured to use the OpenShift preset.
-For more information, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+See: <a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 <li>
 <p>The CRC instance is running.
-For more information, see <a href="https://crc.dev/crc/#starting-the-instance_gsg">Starting the instance</a>.</p>
+See: <a href="#starting-the-instance">Starting the instance</a>.</p>
 </li>
 </ul>
 </div>
@@ -673,7 +673,7 @@ $ cd nodejs-ex</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_stopping_the_instance"><a class="anchor" href="#_stopping_the_instance"></a>Stopping the instance</h2>
+<h2 id="stopping-the-instance"><a class="anchor" href="#stopping-the-instance"></a>Stopping the instance</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <code class="command">crc stop</code> command stops the running CRC instance and container runtime.
@@ -695,38 +695,55 @@ The stopping process takes a few minutes while the cluster shuts down.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_deleting_the_instance"><a class="anchor" href="#_deleting_the_instance"></a>Deleting the instance</h2>
+<h2 id="restarting-the-instance"><a class="anchor" href="#restarting-the-instance"></a>Restarting the instance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To restart CRC, stop the instance and start it again.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Stop the CRC instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre>$ crc stop</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Start the CRC instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre>$ crc start</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deleting-the-instance"><a class="anchor" href="#deleting-the-instance"></a>Deleting the instance</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <code class="command">crc delete</code> command deletes an existing CRC instance.</p>
 </div>
-<div class="ulist">
+<div class="olist arabic">
 <div class="title">Procedure</div>
-<ul>
+<ol class="arabic">
 <li>
-<p>Delete the CRC instance:</p>
+<p>Save any desired information stored in your existing instance.</p>
+</li>
+<li>
+<p>Delete the existing CRC instance.</p>
 <div class="listingblock">
 <div class="content">
 <pre>$ crc delete</pre>
 </div>
 </div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The <code class="command">crc delete</code> command results in the loss of data stored in the CRC instance.
-Save any desired information stored in the instance before running this command.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 </li>
-</ul>
+</ol>
 </div>
 </div>
 </div>
@@ -738,10 +755,10 @@ Save any desired information stored in the instance before running this command.
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
-<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
-<script async src="../../../_/js/vendor/highlight.js"></script>
-<script src="../../../_/js/vendor/lunr.js"></script>
-<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
-<script async src="../../../search-index.js"></script>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/lunr.js"></script>
+<script src="../_/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../_/css/search.css"></script>
+<script async src="../search-index.js"></script>
   </body>
 </html>

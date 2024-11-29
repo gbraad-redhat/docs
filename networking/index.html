@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Networking :: CRC Documentation</title>
-    <link rel="canonical" href="https://crc.dev/docs/getting_started/getting_started/networking/">
+    <link rel="canonical" href="https://crc.dev/docs/networking/">
     <meta name="description" content="Networking">
     <meta name="generator" content="Antora 3.1.4">
-    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../_/css/site.css">
   </head>
   <body class="article">
 <header class="header">
@@ -37,7 +37,7 @@
     <script data-goatcounter="https://crc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </header>
 <div class="body">
-<div class="nav-container" data-component="getting_started" data-version="">
+<div class="nav-container" data-component="ROOT" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -97,7 +97,7 @@
     <li><a href="./">Networking</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///antora/./modules/getting_started/pages/networking.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///antora/./modules/ROOT/pages/networking.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -264,7 +264,7 @@ The additional reserved subnet for Linux is <code>192.168.130.0/24</code>.</p>
 <li>
 <p>If you are not using <code class="command">crc oc-env</code>, when interacting with the cluster, export the <code>.testing</code> domain as part of the <code>no_proxy</code> environment variable.
 The embedded <code class="command">oc</code> executable does not require manual settings.
-For more information about using the embedded <code class="command">oc</code> executable, see <a href="https://crc.dev/crc/#accessing-the-openshift-cluster-with-oc_gsg">Accessing the OpenShift cluster with the OpenShift CLI</a>.</p>
+For more information about using the embedded <code class="command">oc</code> executable, see <a href="../using/#accessing-the-openshift-cluster-with-the-openshift-cli" class="xref page">Accessing the OpenShift cluster with the OpenShift CLI</a>.</p>
 </li>
 </ul>
 </div>
@@ -365,7 +365,7 @@ it from the CRC instance, use <code>host.crc.testing:8080</code>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_setting_up_crc_on_a_remote_server"><a class="anchor" href="#_setting_up_crc_on_a_remote_server"></a>Setting up CRC on a remote server</h2>
+<h2 id="setting-up-on-a-remote-server"><a class="anchor" href="#setting-up-on-a-remote-server"></a>Setting up CRC on a remote server</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Configure a remote server to run an OpenShift Container Platform cluster provided by CRC.</p>
@@ -394,11 +394,11 @@ Exposing an insecure server on the internet has many security implications.</p>
 <ul>
 <li>
 <p>CRC is installed and set up on the remote server.
-For more information, see <a href="https://crc.dev/crc/#installing_gsg">Installing CRC</a> and <a href="https://crc.dev/crc/#setting-up_gsg">Setting up CRC</a>.</p>
+For more information, see <a href="../installing/" class="xref page">Installing CRC</a> and <a href="../using/#setting-up" class="xref page">Setting up CRC</a>.</p>
 </li>
 <li>
 <p>CRC is configured to use the OpenShift preset on the remote server.
-For more information, see <a href="https://crc.dev/crc/#changing-the-selected-preset_gsg">Changing the selected preset</a>.</p>
+For more information, see <a href="../configuring/#changing-the-selected-preset" class="xref page">Changing the selected preset</a>.</p>
 </li>
 <li>
 <p>Your user account has <code>sudo</code> permissions on the remote server.</p>
@@ -529,7 +529,7 @@ Run every command in this procedure on the client.</p>
 <ul>
 <li>
 <p>A remote server is set up for the client to connect to.
-For more information, see <a href="https://crc.dev/crc/#setting-up-remote-server_gsg">Setting up CRC on a remote server</a>.</p>
+For more information, see <a href="#setting-up-on-a-remote-server">Setting up CRC on a remote server</a>.</p>
 </li>
 <li>
 <p>You know the external IP address of the server.</p>
@@ -618,10 +618,10 @@ These entries are created by running a local instance of CRC and will conflict w
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
-<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
-<script async src="../../../_/js/vendor/highlight.js"></script>
-<script src="../../../_/js/vendor/lunr.js"></script>
-<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
-<script async src="../../../search-index.js"></script>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/lunr.js"></script>
+<script src="../_/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../_/css/search.css"></script>
+<script async src="../search-index.js"></script>
   </body>
 </html>

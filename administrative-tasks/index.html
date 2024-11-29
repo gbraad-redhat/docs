@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Administrative tasks :: CRC Documentation</title>
-    <link rel="canonical" href="https://crc.dev/docs/getting_started/getting_started/administrative-tasks/">
+    <link rel="canonical" href="https://crc.dev/docs/administrative-tasks/">
     <meta name="description" content="Administrative tasks">
     <meta name="generator" content="Antora 3.1.4">
-    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../_/css/site.css">
   </head>
   <body class="article">
 <header class="header">
@@ -37,7 +37,7 @@
     <script data-goatcounter="https://crc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </header>
 <div class="body">
-<div class="nav-container" data-component="getting_started" data-version="">
+<div class="nav-container" data-component="ROOT" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -97,7 +97,7 @@
     <li><a href="./">Administrative tasks</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///antora/./modules/getting_started/pages/administrative-tasks.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///antora/./modules/ROOT/pages/administrative-tasks.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -120,7 +120,7 @@ Follow this procedure to enable monitoring for your cluster.</p>
 <p>You must assign additional memory to the CRC instance.
 At least 14 GiB of memory, a value of <code>14336</code>, is recommended for core functionality.
 Increased workloads will require more memory.
-For more information, see <a href="https://crc.dev/crc/#configuring-the-instance_gsg">Configuring the instance</a>.</p>
+For more information, see <a href="../configuring/#configuring-the-instance" class="xref page">Configuring the instance</a>.</p>
 </li>
 </ul>
 </div>
@@ -174,7 +174,7 @@ These services can be enabled by manually removing the desired Operator from the
 <ul>
 <li>
 <p>A running CRC virtual machine and a working <code class="command">oc</code> command.
-For more information, see <a href="https://crc.dev/crc/#accessing-the-openshift-cluster-with-oc_gsg">Accessing the OpenShift cluster with <code>oc</code></a>.</p>
+For more information, see <a href="../using/#accessing-the-openshift-cluster-with-the-openshift-cli" class="xref page">Accessing the OpenShift cluster with <code>oc</code></a>.</p>
 </li>
 <li>
 <p>You must log in through <code class="command">oc</code> as the <code>kubeadmin</code> user.</p>
@@ -192,7 +192,7 @@ For more information, see <a href="https://crc.dev/crc/#accessing-the-openshift-
 <p>On Linux or macOS:</p>
 <div class="listingblock">
 <div class="content">
-<pre>$ oc get clusterversion version -ojsonpath='{range .spec.overrides[*]}{.name}{"\n"}{end}' | nl -v 0</pre>
+<pre>$ oc get clusterversion version -ojsonpath='{range .spec.overrides[*]}{.name}{"\n"}{end}' | nl -v -2</pre>
 </div>
 </div>
 </li>
@@ -200,7 +200,7 @@ For more information, see <a href="https://crc.dev/crc/#accessing-the-openshift-
 <p>On Microsoft Windows using PowerShell:</p>
 <div class="listingblock">
 <div class="content">
-<pre>PS&gt; oc get clusterversion version -ojsonpath='{range .spec.overrides[*]}{.name}{"\n"}{end}' | % {$nl++;"`t$($nl-1) `t $_"};$nl=0</pre>
+<pre>PS&gt; oc get clusterversion version -ojsonpath='{range .spec.overrides[*]}{.name}{"\n"}{end}' | % {$nl++;"`t$($nl-3) `t $_"};$nl=0</pre>
 </div>
 </div>
 </li>
@@ -228,10 +228,10 @@ clusterversion.config.openshift.io/version patched</pre>
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
-<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
-<script async src="../../../_/js/vendor/highlight.js"></script>
-<script src="../../../_/js/vendor/lunr.js"></script>
-<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
-<script async src="../../../search-index.js"></script>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/lunr.js"></script>
+<script src="../_/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../_/css/search.css"></script>
+<script async src="../search-index.js"></script>
   </body>
 </html>
